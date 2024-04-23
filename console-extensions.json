@@ -16,5 +16,29 @@
       "perspective": "admin",
       "section": "home"
     }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/foo",
+      "component": { "$codeRef": "FooPage" }
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "foo",
+      "name": "%plugin__console-plugin-template~Plugin Foo page%",
+      "href": "/foo",
+      "perspective": "admin",
+      "section": "home"
+    }
+  },
+    {
+    "type": "console.create-project",
+    "properties": {
+      "provider": { "$codeRef": "useCreateProjectHook" }
+    }
   }
 ]
